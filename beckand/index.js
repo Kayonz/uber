@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 let produtos = [];
 let currentId = 1;
 
-const usuarios = [{ usuario: 'admin', senha: '123' }];
+const usuarios = [{ username: 'administrador', password: '1234' }];
 
 function autenticarToken(req, res, next) {
   const authHeader = req.headers['authorization'];
@@ -27,7 +27,7 @@ function autenticarToken(req, res, next) {
   });
 }
 
-// Login
+
 app.post('/login', (req, res) => {
   const { usuario, senha } = req.body;
   const user = usuarios.find(u => u.usuario === usuario && u.senha === senha);
