@@ -9,7 +9,7 @@ import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/Delete';
 import AddIcon from '@mui/icons-material/Add';
 
-const API_URL = 'http://localhost:3000';
+const API_URL = 'http://localhost:4000';
 const api = axios.create({
   baseURL: API_URL,
   headers: { 'Content-Type': 'application/json' },
